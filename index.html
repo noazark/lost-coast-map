@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lost Coast Cheat Sheet</title>
+    <script src="/d3.min.js" charset="utf-8"></script>
+    <script src="/moment.min.js" charset="utf-8"></script>
+
+    <style>
+      body {
+        font: 10px sans-serif;
+        margin: 0;
+      }
+
+      @media print {
+        .page-break {page-break-after: always;}
+      }
+
+      .x-axis path,
+      .y-axis path,
+      .x-axis line,
+      .y-axis line  {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tides"></div>
+    <div id="waypoints"></div>
+    <script src="/tides.js" charset="utf-8"></script>
+    <script src="/waypoints.js" charset="utf-8"></script>
+  </body>
+</html>
